@@ -8,8 +8,16 @@ if(isset($_POST['proses'])) {
     $jumlah_beli = $_POST['jumlah_beli'];
 
     $total_harga = $harga_satuan * $jumlah_beli;
-    if ($kategori == "makanan") {
-        $total_bayar = $total_harga * 0.5;
+    if ($total_harga >= 85) {
+        echo "A";
+    } elseif ($total_harga >= 75) {
+        echo "B";
+    } elseif ($total_harga >= 60) {
+        echo "C";
+    } elseif ($total_harga >= 50) {
+        echo "D";
+    } else {
+        echo "E";
     }
 
     echo "Kode Barang  :" . $kode_barang . "<br>";
@@ -21,4 +29,3 @@ if(isset($_POST['proses'])) {
     echo "Total Harga  :" . $total_harga . "<br>";
     echo "Total Bayar  :" . $total_bayar . "<br>";
 }
-?>

@@ -26,8 +26,6 @@
         <input type="radio" name="satuan" value="bungkus">karton <br>
         Harga Satuan : <textarea name="harga_satuan" id="" cols="20" rows="2"></textarea><br>    
         Jumlah Beli : <textarea name="jumlah_beli" id="" cols="20" rows="2"></textarea><br>    
-        <!-- Total Harga : <textarea name="total_harga" id="" cols="20" rows="2"></textarea><br>
-        Total Bayar : <textarea name="total_bayar" id="" cols="20" rows="2"></textarea><br> -->
         <input type="submit" name="proses" value="Kirim">
     </form>
 
